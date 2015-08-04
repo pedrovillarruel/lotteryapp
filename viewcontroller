@@ -33,7 +33,7 @@ class ViewController: UIViewController {
                 answer = false;
             } else {
                 answer = true;
-                display.text = digit1 + "  " + digit2 + "  " + digit3 + "  " + digit4 + "  " + digit5 + "  BB  " + bonusb
+                display.text = digit1 + "  " + digit2 + "  " + digit3 + "  " + digit4 + "  " + digit5 + "  BonusBall  " + bonusb
             }
         }
     }
@@ -59,7 +59,7 @@ class ViewController: UIViewController {
                 answer = false;
             } else {
                 answer = true;
-                display.text = digit1 + "  " + digit2 + "  " + digit3 + "  " + digit4 + "  " + digit5 + "  PB  " + bonusb
+                display.text = digit1 + "  " + digit2 + "  " + digit3 + "  " + digit4 + "  " + digit5 + "  PowerBall  " + bonusb
             }
         }
     }
@@ -85,7 +85,7 @@ class ViewController: UIViewController {
                 answer = false;
             } else {
                 answer = true;
-                display.text = digit1 + "  " + digit2 + "  " + digit3 + "  " + digit4 + "  " + digit5 + "  MEGA  " + bonusb
+                display.text = digit1 + "  " + digit2 + "  " + digit3 + "  " + digit4 + "  " + digit5 + "  MegaBall  " + bonusb
             }
         }
     }
@@ -110,7 +110,7 @@ class ViewController: UIViewController {
                 answer = false;
             } else {
                 answer = true;
-                display.text = digit1 + "  " + digit2 + "  " + digit3 + "  " + digit4 + "  " + digit5
+                display.text = digit1 + "   " + digit2 + "   " + digit3 + "   " + digit4 + "   " + digit5
             }
         }
     }
@@ -120,14 +120,14 @@ class ViewController: UIViewController {
         let digit2 = String(rand() % 8 + 1)
         let digit3 = String(rand() % 8 + 1)
         let digit4 = String(rand() % 8 + 1)
-        display.text = digit1 + "  " + digit2 + "  " + digit3 + "  " + digit4
+        display.text = digit1 + "   " + digit2 + "   " + digit3 + "   " + digit4
     }
     
     @IBAction func dailyThree(sender:UIButton) {
         let digit1 = String(rand() % 8 + 1)
         let digit2 = String(rand() % 8 + 1)
         let digit3 = String(rand() % 8 + 1)
-        display.text = digit1 + "  " + digit2 + "  " + digit3
+        display.text = digit1 + "   " + digit2 + "   " + digit3
     }
     
     var displayValue : String {
@@ -140,7 +140,7 @@ class ViewController: UIViewController {
     
     @IBAction func clear() {
         displayValue = ""
-        display.text = "Click below to generate a number"
+        display.text = "Click below to generate a number!"
     }
 }
 
