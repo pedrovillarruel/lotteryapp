@@ -1,0 +1,148 @@
+//
+//  ViewController.swift
+//  aLotto Luck Generator
+//
+//  Created by Pedro Villarruel on 3/26/15.
+//  Copyright (c) 2015 Pedro Villarruel. All rights reserved.
+//
+
+import UIKit
+
+class ViewController: UIViewController {
+    
+    @IBOutlet var display : UILabel!
+    
+    @IBAction func superLotto(sender:UIButton) {
+        var answer = false;
+        while(answer == false) {
+            let digit1 = String(rand() % 46 + 1)
+            let digit2 = String(rand() % 46 + 1)
+            let digit3 = String(rand() % 46 + 1)
+            let digit4 = String(rand() % 46 + 1)
+            let digit5 = String(rand() % 46 + 1)
+            let bonusb = String(rand() % 27 + 1)
+            if(digit5 == digit4 || digit5 == digit3 || digit5 == digit2 || digit5 == digit1) {
+                answer = false;
+            } else if(digit4 == digit5 || digit4 == digit3 || digit4 == digit2 || digit4 == digit1) {
+                answer = false;
+            } else if(digit3 == digit5 || digit3 == digit4 || digit3 == digit2 || digit3 == digit1) {
+                answer = false;
+            } else if(digit2 == digit5 || digit2 == digit4 || digit2 == digit3 || digit2 == digit1) {
+                answer = false;
+            } else if(digit1 == digit5 || digit1 == digit4 || digit1 == digit3 || digit1 == digit2) {
+                answer = false;
+            } else {
+                answer = true;
+                display.text = digit1 + "  " + digit2 + "  " + digit3 + "  " + digit4 + "  " + digit5 + "  BB  " + bonusb
+            }
+        }
+    }
+    
+    @IBAction func powerBall(sender:UIButton) {
+        var answer = false;
+        while(answer == false) {
+            let digit1 = String(rand() % 58 + 1)
+            let digit2 = String(rand() % 58 + 1)
+            let digit3 = String(rand() % 58 + 1)
+            let digit4 = String(rand() % 58 + 1)
+            let digit5 = String(rand() % 58 + 1)
+            let bonusb = String(rand() % 34 + 1)
+            if(digit5 == digit4 || digit5 == digit3 || digit5 == digit2 || digit5 == digit1) {
+                answer = false;
+            } else if(digit4 == digit5 || digit4 == digit3 || digit4 == digit2 || digit4 == digit1) {
+                answer = false;
+            } else if(digit3 == digit5 || digit3 == digit4 || digit3 == digit2 || digit3 == digit1) {
+                answer = false;
+            } else if(digit2 == digit5 || digit2 == digit4 || digit2 == digit3 || digit2 == digit1) {
+                answer = false;
+            } else if(digit1 == digit5 || digit1 == digit4 || digit1 == digit3 || digit1 == digit2) {
+                answer = false;
+            } else {
+                answer = true;
+                display.text = digit1 + "  " + digit2 + "  " + digit3 + "  " + digit4 + "  " + digit5 + "  PB  " + bonusb
+            }
+        }
+    }
+    
+    @IBAction func megaMillions(sender:UIButton) {
+        var answer = false;
+        while(answer == false) {
+            let digit1 = String(rand() % 74 + 1)
+            let digit2 = String(rand() % 74 + 1)
+            let digit3 = String(rand() % 74 + 1)
+            let digit4 = String(rand() % 74 + 1)
+            let digit5 = String(rand() % 74 + 1)
+            let bonusb = String(rand() % 14 + 1)
+            if(digit5 == digit4 || digit5 == digit3 || digit5 == digit2 || digit5 == digit1) {
+                answer = false;
+            } else if(digit4 == digit5 || digit4 == digit3 || digit4 == digit2 || digit4 == digit1) {
+                answer = false;
+            } else if(digit3 == digit5 || digit3 == digit4 || digit3 == digit2 || digit3 == digit1) {
+                answer = false;
+            } else if(digit2 == digit5 || digit2 == digit4 || digit2 == digit3 || digit2 == digit1) {
+                answer = false;
+            } else if(digit1 == digit5 || digit1 == digit4 || digit1 == digit3 || digit1 == digit2) {
+                answer = false;
+            } else {
+                answer = true;
+                display.text = digit1 + "  " + digit2 + "  " + digit3 + "  " + digit4 + "  " + digit5 + "  MEGA  " + bonusb
+            }
+        }
+    }
+    
+    @IBAction func fantasyFive(sender:UIButton) {
+        var answer = false;
+        while(answer == false) {
+            let digit1 = String(rand() % 38 + 1)
+            let digit2 = String(rand() % 38 + 1)
+            let digit3 = String(rand() % 38 + 1)
+            let digit4 = String(rand() % 38 + 1)
+            let digit5 = String(rand() % 38 + 1)
+            if(digit5 == digit4 || digit5 == digit3 || digit5 == digit2 || digit5 == digit1) {
+                answer = false;
+            } else if(digit4 == digit5 || digit4 == digit3 || digit4 == digit2 || digit4 == digit1) {
+                answer = false;
+            } else if(digit3 == digit5 || digit3 == digit4 || digit3 == digit2 || digit3 == digit1) {
+                answer = false;
+            } else if(digit2 == digit5 || digit2 == digit4 || digit2 == digit3 || digit2 == digit1) {
+                answer = false;
+            } else if(digit1 == digit5 || digit1 == digit4 || digit1 == digit3 || digit1 == digit2) {
+                answer = false;
+            } else {
+                answer = true;
+                display.text = digit1 + "  " + digit2 + "  " + digit3 + "  " + digit4 + "  " + digit5
+            }
+        }
+    }
+    
+    @IBAction func dailyFour(sender:UIButton) {
+        let digit1 = String(rand() % 8 + 1)
+        let digit2 = String(rand() % 8 + 1)
+        let digit3 = String(rand() % 8 + 1)
+        let digit4 = String(rand() % 8 + 1)
+        display.text = digit1 + "  " + digit2 + "  " + digit3 + "  " + digit4
+    }
+    
+    @IBAction func dailyThree(sender:UIButton) {
+        let digit1 = String(rand() % 8 + 1)
+        let digit2 = String(rand() % 8 + 1)
+        let digit3 = String(rand() % 8 + 1)
+        display.text = digit1 + "  " + digit2 + "  " + digit3
+    }
+    
+    var displayValue : String {
+        get {
+            return String(display.text!)
+        } set {
+            display.text = "\(newValue)"
+        }
+    }
+    
+    @IBAction func clear() {
+        displayValue = ""
+        display.text = "Click below to generate a number"
+    }
+}
+
+
+
